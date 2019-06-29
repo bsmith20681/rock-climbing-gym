@@ -1,0 +1,22 @@
+.navbar{
+
+  &-nav{
+    color:$black;
+  }
+  &-brand{
+    height: 100px;
+    width: 175px;
+  }
+}
+
+.nav-link{
+  color:#000;
+  &:hover{
+    color: $orange;
+  }
+}
+
+.active {
+  color:$orange;
+  border-bottom: 2px solid $orange
+}

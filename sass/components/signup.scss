@@ -1,0 +1,40 @@
+.signup{
+  background-color: $blue;
+  height: 403px;
+  display:flex;
+  align-items: center;
+
+  &-title{
+    font-family: 'Cabin';
+    color: $white;
+    text-align: center;
+  }
+
+  &-subtitle{
+    color: $white;
+    text-align: center;
+  }
+
+  &-form{
+    text-align: center;
+
+    input{
+      border-radius: 5px;
+      border-style: none;
+      margin-right: 22px;
+    }
+
+    &__name{
+      padding: 10px 12px 10px 16px;
+    }
+
+    &__email{
+      padding: 10px 205px 10px 16px;
+    }
+  }
+}
+
+::placeholder{
+  color:gray;
+  opacity:0.6;
+}

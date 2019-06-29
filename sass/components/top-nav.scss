@@ -1,0 +1,23 @@
+.top-nav {
+  background-color: $black;
+}
+
+.top-nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  &-item{
+    display:flex;
+    p {
+      color: $white;
+      font-size: 12px;
+      padding: 13px 0 0 5px;
+    }
+  }
+}
+
+.top-nav-svg {
+  fill: $orange;
+  width: 21px;
+  height:43px;
+}

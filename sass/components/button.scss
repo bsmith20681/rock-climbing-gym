@@ -1,0 +1,13 @@
+.btn{
+  padding: 18px 72px;
+  border-radius: 15px;
+}
+
+.btn-orange{
+  background-color: $orange;
+  color: $white;
+
+  &__hero{
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat'; }
+
+::placeholder {
+  color: gray;
+  opacity: 0.6; }
+
+.btn {
+  padding: 18px 72px;
+  border-radius: 15px; }
+
+.btn-orange {
+  background-color: #FF7F00;
+  color: #FFF; }
+  .btn-orange__hero {
+    margin-top: 25px; }
+
+.calender {
+  display: flex;
+  height: 926px;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/two-climbers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .calender-title {
+    font-family: 'Cabin';
+    color: #FFF;
+    text-align: center;
+    margin: 73px 0 55px 0; }
+  .calender table, .calender th, .calender td {
+    border: 1px solid #FFF;
+    text-align: center; }
+  .calender th {
+    height: 105px;
+    width: 234px; }
+  .calender-table {
+    color: white; }
+  .calender-table-row__day th {
+    color: #FFF;
+    background-color: #FF7F00; }
+  .calender .row__item {
+    background-color: #FFF;
+    color: #FF7F00; }
+  .calender .item-gray {
+    font-size: 14px;
+    color: #707070; }
+
+.signup {
+  background-color: #89adc9;
+  height: 403px;
+  display: flex;
+  align-items: center; }
+  .signup-title {
+    font-family: 'Cabin';
+    color: #FFF;
+    text-align: center; }
+  .signup-subtitle {
+    color: #FFF;
+    text-align: center; }
+  .signup-form {
+    text-align: center; }
+    .signup-form input {
+      border-radius: 5px;
+      border-style: none;
+      margin-right: 22px; }
+    .signup-form__name {
+      padding: 10px 12px 10px 16px; }
+    .signup-form__email {
+      padding: 10px 205px 10px 16px; }
+
+::placeholder {
+  color: gray;
+  opacity: 0.6; }
+
+.top-nav {
+  background-color: #000; }
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .top-nav-item {
+    display: flex; }
+    .top-nav-item p {
+      color: #FFF;
+      font-size: 12px;
+      padding: 13px 0 0 5px; }
+
+.top-nav-svg {
+  fill: #FF7F00;
+  width: 21px;
+  height: 43px; }
+
+.navbar-nav {
+  color: #000; }
+.navbar-brand {
+  height: 100px;
+  width: 175px; }
+
+.nav-link {
+  color: #000; }
+  .nav-link:hover {
+    color: #FF7F00; }
+
+.active {
+  color: #FF7F00;
+  border-bottom: 2px solid #FF7F00; }
+
+.hero {
+  height: 630px;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/youth-climber.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero-title {
+    padding-top: 208px;
+    color: #FFF;
+    font-family: "Cabin";
+    font-size: 72px; }
+  .hero-subtitle {
+    color: #FFF;
+    font-size: 28px; }
+
+/*# sourceMappingURL=mains.css.map */

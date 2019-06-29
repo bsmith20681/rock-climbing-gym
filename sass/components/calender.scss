@@ -1,0 +1,50 @@
+.calender{
+  display: flex;
+  height: 926px;
+  background-image: linear-gradient(
+        to right bottom,
+        rgba($black, 0.9),
+        rgba($black, 0.9)),
+         url(../img/two-climbers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-title{
+    font-family: 'Cabin';
+    color: $white;
+    text-align: center;
+    margin: 73px 0 55px 0;
+  }
+
+
+  table,th,td {
+    border: 1px solid $white;
+    text-align: center;
+  }
+
+  th {
+    height: 105px;
+    width: 234px;
+  }
+
+  &-table{
+    color: white;
+  }
+
+  &-table-row__day th{
+    color:$white;
+    background-color: $orange;
+  }
+
+  .row__item{
+    background-color: $white;
+    color:$orange;
+  }
+
+  .item-gray{
+    font-size: 14px;
+    color: $gray;
+  }
+
+
+}

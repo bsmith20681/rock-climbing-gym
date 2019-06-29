@@ -1,0 +1,22 @@
+.hero{
+  height: 630px;
+  background-image: linear-gradient(
+        to right bottom,
+        rgba($black, 0.6),
+        rgba($black, 0.6)),
+         url(../img/youth-climber.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-title {
+    padding-top: 208px;
+    color: $white;
+    font-family: "Cabin";
+    font-size: 72px
+  }
+
+  &-subtitle{
+    color:$white;
+    font-size: 28px;
+  }
+}
