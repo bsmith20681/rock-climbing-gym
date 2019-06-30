@@ -1,13 +1,21 @@
 .btn{
-  padding: 18px 72px;
+  padding: 10px 48px;
   border-radius: 15px;
+  &:hover{
+    color:$white;
+  }
 }
 
 .btn-orange{
   background-color: $orange;
   color: $white;
 
+  &:hover{
+    background-color: $dark-orange;
+  }
+
   &__hero{
     margin-top: 25px;
+    font-size: 28px;
   }
 }

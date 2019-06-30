@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cimbing Gym</title>
+  <!-- VENDER CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/mains.css">
 </head>
 <body>
@@ -13,18 +16,18 @@
   <!-- TOP NAV -->
 <section class="top-nav">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <div class="top-nav">
         <div class="top-nav-item">
-          <img class="top-nav-svg" src="/svg/phone.svg" alt="phone">
+          <i class="fas fa-phone-alt top-nav-icon"></i>
           <p>385-334-4231</p>
         </div>
         <div class="top-nav-item">
-          <img class="top-nav-svg" src="/svg/clock.svg" alt="times open">
-          <p>Mon-Fri 7:00AM-7:00PM</p>
+          <i class="far fa-clock top-nav-icon"></i>
+          <p>Mon-Sat 7:00AM-7:00PM</p>
         </div>
         <div class="top-nav-item">
-          <img class="top-nav-svg" src="/svg/address.svg" alt="address">
+          <i class="fas fa-map-marker-alt top-nav-icon"></i>
           <p>123 Main st. Provo, UT</p>
         </div>
       </div>
@@ -34,37 +37,35 @@
 
 
   <!-- MAIN NAV -->
+  <div class="container" data-aos="fade-up">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img class="navbar-brand" src="img/logo.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <nav class="nav navbar-expand-lg">
-          <a href="#" class="navbar-brand"><img class="navbar-brand" src="/img/logo.jpg" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto float-right">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Schedule</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link current" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#calendar">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonial" class="nav-link">Testimonials</a>
+        </li>
+      </ul>
     </div>
+    </nav>
   </div>
 
   <!-- HERO -->
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-7" data-aos="fade-up">
           <h1 class="hero-title"><strong>Start Climbing Today</strong></h1>
           <h5 class="hero-subtitle">Help your kids grow by teaching them how to climb</h5>
           <a class="btn btn-orange btn-orange__hero" href="#">Join Now</a>
@@ -76,7 +77,7 @@
 
   <!-- SIGN UP -->
 
-  <section class="signup ">
+  <section class="signup">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -92,16 +93,16 @@
     </div>
   </section>
 
-  <!-- CALENDER -->
+  <!-- calendar -->
 
-  <section class="calender">
+  <section class="calendar" id="calendar">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="calender-title">CALENDER</h1>
+          <h1 class="calendar-title">CALENDAR</h1>
           <div style="overflow-x:auto;">
-            <table class="calender-table">
-              <tr class="calender-table-row__day">
+            <table class="calendar-table">
+              <tr class="calendar-table-row__day">
                 <th></th>
                 <th>Monday</th>
                 <th>Tuesday</th>
@@ -111,7 +112,7 @@
                 <th>Saturday</th>
               </tr>
 
-              <tr class="calender-table-row">
+              <tr class="calendar-table-row">
                 <th>7:00AM</th>
                 <th></th>
                 <th class="row__item"><p>Kid's Climb</p><p class="item-gray">7:00AM-8:00AM</p></th>
@@ -121,7 +122,7 @@
                 <th class="row__item"><p>Bouldering</p><p class="item-gray">7:00AM-8:00AM</p></th>
               </tr>
 
-              <tr class="calender-table-row">
+              <tr class="calendar-table-row">
                 <th>9:00AM</th>
                 <th class="row__item"><p>Adult Climb</p><p class="item-gray">9:00AM-10:00AM</p></th>
                 <th></th>
@@ -131,7 +132,7 @@
                 <th></th>
               </tr>
 
-              <tr class="calender-table-row">
+              <tr class="calendar-table-row">
                 <th>1:00PM</th>
                 <th></th>
                 <th></th>
@@ -141,7 +142,7 @@
                 <th></th>
               </tr>
 
-              <tr class="calender-table-row">
+              <tr class="calendar-table-row">
                 <th>3:00PM</th>
                 <th></th>
                 <th></th>
@@ -151,7 +152,7 @@
                 <th></th>
               </tr>
 
-              <tr class="calender-table-row">
+              <tr class="calendar-table-row">
                 <th>5:00PM</th>
                 <th class="row__item"><p>Harness Climb</p><p class="item-gray">5:00PM-6:00PM</p></th>
                 <th></th>
@@ -161,15 +162,109 @@
                 <th class="row__item"><p>Harness Climb</p><p class="item-gray">5:00PM-6:00PM</p></th>
               </tr>
             </table>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="testimonial" id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="testimonial-title ">Testimonials</h1>
+          <div class="border-bottom-orange"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 m-auto">
+    			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    				<!-- Carousel indicators -->
+    				<ol class="carousel-indicators">
+    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    					<li data-target="#myCarousel" data-slide-to="1"></li>
+    					<li data-target="#myCarousel" data-slide-to="2"></li>
+    				</ol>
+    				<!-- Wrapper for carousel items -->
+    				<div class="carousel-inner">
+    					<div class="item carousel-item active">
+    						<div class="img-box"><img src="/img/boy.jpg" alt=""></div>
+                <p class="overview">Paula Wilson</p>
+    						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+    					</div>
+    					<div class="item carousel-item">
+    						<div class="img-box"><img src="/img/girl-1.jpg" alt=""></div>
+                <p class="overview">Antonio Moreno</p>
+    						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+    					</div>
+    					<div class="item carousel-item">
+    						<div class="img-box"><img src="/img/girl-2.jpg" alt=""></div>
+                <p class="overview">Michael Holz</p>
+    						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
 
+    					</div>
+    				</div>
+    				<!-- Carousel controls -->
+    				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+    					<i class="fa fa-angle-left"></i>
+    				</a>
+    				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+    					<i class="fa fa-angle-right"></i>
+    				</a>
+    			</div>
+    	</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h1 class="footer-title">Contact Info</h1>
+        <p class="footer-item"><i class="fas fa-phone-alt"></i> 385-334-4231</p>
+        <p class="footer-item"><i class="far fa-clock"></i> Mon-Sat 7:00AM-7:00PM</p>
+        <p class="footer-item"><i class="fas fa-map-marker-alt"></i> 123 Main st. Provo, UT</p>
+      </div>
+
+      <div class="col-lg-4">
+        <h1 class="footer-title">Newsletter</h1>
+        <p class="footer-item">Learn about discounts and offers through our news letter!</p>
+        <div class="signup-form">
+          <input class="signup-form__footer" type="email" name="" value="" placeholder="Enter Your Email">
+          <a class="btn btn-orange"href="#">Sign Up!</a>
+        </div>
+
+
+      </div>
+
+      <div class="col-lg-4">
+        <h1 class="footer-title">Social</h1>
+        <a href=""><i class="fab fa-facebook-square footer-icon"></i></a>
+        <a href="#"><i class="fab fa-twitter-square footer-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://kit.fontawesome.com/78ae06e93a.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+
+
+  <!--JAVASCRIPT FOR ANIMATION-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 </body>
 </html>

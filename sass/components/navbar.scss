@@ -9,14 +9,14 @@
   }
 }
 
-.nav-link{
-  color:#000;
+.nav-link {
+  color:#000 !important;
   &:hover{
-    color: $orange;
+    color: $orange !important;
   }
 }
 
-.active {
-  color:$orange;
-  border-bottom: 2px solid $orange
+.current {
+  color:$orange !important;
+  border-bottom: 2px solid $orange;
 }
