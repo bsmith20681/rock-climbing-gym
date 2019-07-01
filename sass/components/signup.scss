@@ -21,7 +21,7 @@
     input{
       border-radius: 5px;
       border-style: none;
-      margin-right: 22px;
+      margin: 5px 22px 5px 0;
     }
 
     &__name{
@@ -34,6 +34,7 @@
 
     &__footer{
       padding: 10px 150px 10px 0;
+      margin-bottom: 8px;
     }
   }
 }

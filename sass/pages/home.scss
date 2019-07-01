@@ -31,22 +31,21 @@
     margin: 63px 0 71px 0;
   }
 
-.border-bottom-orange{
-  border-bottom: 4px solid $orange;
-  width: 20%;
-  position: absolute;
-  left: 40%;
-  bottom: 30%;
-
-}
-
   &-name{
     color:$black;
     font-size: 48px;
   }
 
-  &-content{
+  &-text{
     color: $black;
+  }
+
+  .border-bottom-orange{
+    border-bottom: 4px solid $orange;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
   }
 
 }
@@ -80,16 +79,7 @@
 	display: block;
 	border-radius: 50%;
 }
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
+
 .carousel .carousel-control {
 	width: 40px;
     height: 40px;
@@ -102,24 +92,23 @@
 	line-height: 42px;
     position: absolute;
     display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+	color: $orange;
 }
 .carousel .carousel-indicators {
 	bottom: -40px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
-	width: 10px;
-	height: 10px;
+	width: 22px;
+	height: 22px;
 	margin: 1px 3px;
 	border-radius: 50%;
 }
 .carousel-indicators li {
-	background: #999;
+	background: $gray;
 	border-color: transparent;
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 .carousel-indicators li.active {
-	background: #555;
+	background: $orange;
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
